@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200" height="1200" viewBox="0, 0, 1200, 1200">
+  <g id="Background">
+    <rect x="0" y="0" width="1200" height="1200" fill="#000000" fill-opacity="0"/>
+  </g>
+  <g id="Layer 1">
+    <g>
+      <path d="M480.5,80.5 L560.5,80.5 L560.5,160.5 L480.5,160.5 z" fill="#8FC7ED"/>
+      <path d="M480.5,80.5 L560.5,80.5 L560.5,160.5 L480.5,160.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M560.5,80.5 L640.5,80.5 L640.5,160.5 L560.5,160.5 z" fill="#8FC7ED"/>
+      <path d="M560.5,80.5 L640.5,80.5 L640.5,160.5 L560.5,160.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M640.5,80.5 L720.5,80.5 L720.5,160.5 L640.5,160.5 z" fill="#C5C6C6"/>
+      <path d="M640.5,80.5 L720.5,80.5 L720.5,160.5 L640.5,160.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M480.5,160.5 L560.5,160.5 L560.5,240.5 L480.5,240.5 z" fill="#8FC7ED"/>
+      <path d="M480.5,160.5 L560.5,160.5 L560.5,240.5 L480.5,240.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M560.5,160.5 L640.5,160.5 L640.5,240.5 L560.5,240.5 z" fill="#8FC7ED"/>
+      <path d="M560.5,160.5 L640.5,160.5 L640.5,240.5 L560.5,240.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M640.5,160.5 L720.5,160.5 L720.5,240.5 L640.5,240.5 z" fill="#C5C6C6"/>
+      <path d="M640.5,160.5 L720.5,160.5 L720.5,240.5 L640.5,240.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M480.5,238.5 L560.5,238.5 L560.5,318.5 L480.5,318.5 z" fill="#8FC7ED"/>
+      <path d="M480.5,238.5 L560.5,238.5 L560.5,318.5 L480.5,318.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M560.5,238.5 L640.5,238.5 L640.5,318.5 L560.5,318.5 z" fill="#8FC7ED"/>
+      <path d="M560.5,238.5 L640.5,238.5 L640.5,318.5 L560.5,318.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M640.5,238.5 L720.5,238.5 L720.5,318.5 L640.5,318.5 z" fill="#C5C6C6"/>
+      <path d="M640.5,238.5 L720.5,238.5 L720.5,318.5 L640.5,318.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M80.5,80.5 L160.5,80.5 L160.5,160.5 L80.5,160.5 z" fill="#C5C6C6"/>
+      <path d="M80.5,80.5 L160.5,80.5 L160.5,160.5 L80.5,160.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M160.5,80.5 L240.5,80.5 L240.5,160.5 L160.5,160.5 z" fill="#C5C6C6"/>
+      <path d="M160.5,80.5 L240.5,80.5 L240.5,160.5 L160.5,160.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M240.5,80.5 L320.5,80.5 L320.5,160.5 L240.5,160.5 z" fill="#C5C6C6"/>
+      <path d="M240.5,80.5 L320.5,80.5 L320.5,160.5 L240.5,160.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M80.5,160.5 L160.5,160.5 L160.5,240.5 L80.5,240.5 z" fill="#C5C6C6"/>
+      <path d="M80.5,160.5 L160.5,160.5 L160.5,240.5 L80.5,240.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M160.5,160.5 L240.5,160.5 L240.5,240.5 L160.5,240.5 z" fill="#C5C6C6"/>
+      <path d="M160.5,160.5 L240.5,160.5 L240.5,240.5 L160.5,240.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M240.5,160.5 L320.5,160.5 L320.5,240.5 L240.5,240.5 z" fill="#C5C6C6"/>
+      <path d="M240.5,160.5 L320.5,160.5 L320.5,240.5 L240.5,240.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M80.5,238.5 L160.5,238.5 L160.5,318.5 L80.5,318.5 z" fill="#C5C6C6"/>
+      <path d="M80.5,238.5 L160.5,238.5 L160.5,318.5 L80.5,318.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M160.5,238.5 L240.5,238.5 L240.5,318.5 L160.5,318.5 z" fill="#C5C6C6"/>
+      <path d="M160.5,238.5 L240.5,238.5 L240.5,318.5 L160.5,318.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M240.5,238.5 L320.5,238.5 L320.5,318.5 L240.5,318.5 z" fill="#C5C6C6"/>
+      <path d="M240.5,238.5 L320.5,238.5 L320.5,318.5 L240.5,318.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 602.164, 120)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">1</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 602.164, 200)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">2</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 600, 278)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">2</tspan>
+    </text>
+    <g>
+      <path d="M880.5,80.5 L960.5,80.5 L960.5,160.5 L880.5,160.5 z" fill="#8FC7ED"/>
+      <path d="M880.5,80.5 L960.5,80.5 L960.5,160.5 L880.5,160.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M960.5,80.5 L1040.5,80.5 L1040.5,160.5 L960.5,160.5 z" fill="#8FC7ED"/>
+      <path d="M960.5,80.5 L1040.5,80.5 L1040.5,160.5 L960.5,160.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M1040.5,80.5 L1120.5,80.5 L1120.5,160.5 L1040.5,160.5 z" fill="#8FC7ED"/>
+      <path d="M1040.5,80.5 L1120.5,80.5 L1120.5,160.5 L1040.5,160.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M880.5,160.5 L960.5,160.5 L960.5,240.5 L880.5,240.5 z" fill="#8FC7ED"/>
+      <path d="M880.5,160.5 L960.5,160.5 L960.5,240.5 L880.5,240.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M960.5,160.5 L1040.5,160.5 L1040.5,240.5 L960.5,240.5 z" fill="#8FC7ED"/>
+      <path d="M960.5,160.5 L1040.5,160.5 L1040.5,240.5 L960.5,240.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M1040.5,160.5 L1120.5,160.5 L1120.5,240.5 L1040.5,240.5 z" fill="#C5C6C6"/>
+      <path d="M1040.5,160.5 L1120.5,160.5 L1120.5,240.5 L1040.5,240.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M880.5,238.5 L960.5,238.5 L960.5,318.5 L880.5,318.5 z" fill="#8FC7ED"/>
+      <path d="M880.5,238.5 L960.5,238.5 L960.5,318.5 L880.5,318.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M960.5,238.5 L1040.5,238.5 L1040.5,318.5 L960.5,318.5 z" fill="#8FC7ED"/>
+      <path d="M960.5,238.5 L1040.5,238.5 L1040.5,318.5 L960.5,318.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M1040.5,238.5 L1120.5,238.5 L1120.5,318.5 L1040.5,318.5 z" fill="#C5C6C6"/>
+      <path d="M1040.5,238.5 L1120.5,238.5 L1120.5,318.5 L1040.5,318.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 1002.164, 120)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">1</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1002.164, 200)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">2</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1080, 120)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">1</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1000, 278)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">2</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 680, 200)">
+      <tspan x="-14.801" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">?</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 680, 278)">
+      <tspan x="-14.801" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">?</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1080, 200)">
+      <tspan x="-18.328" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">X</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1080, 278)">
+      <tspan x="-18.328" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">X</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 220, 441.527)">
+      <tspan x="-140" y="-48.473" font-family="Verdana-Bold" font-size="30" fill="#294270">checkio([</tspan>
+      <tspan x="-140" y="-12.473" font-family="Verdana-Bold" font-size="30" fill="#294270">	[-1, -1, -1],</tspan>
+      <tspan x="-140" y="23.527" font-family="Verdana-Bold" font-size="30" fill="#294270">	[-1, -1, -1],</tspan>
+      <tspan x="-140" y="59.527" font-family="Verdana-Bold" font-size="30" fill="#294270">	[-1, -1, -1]])</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 620, 441.527)">
+      <tspan x="-140" y="-48.473" font-family="Verdana-Bold" font-size="30" fill="#294270">checkio([</tspan>
+      <tspan x="-140" y="-12.473" font-family="Verdana-Bold" font-size="30" fill="#294270">	[0, 1, -1],</tspan>
+      <tspan x="-140" y="23.527" font-family="Verdana-Bold" font-size="30" fill="#294270">	[0, 2, -1],</tspan>
+      <tspan x="-140" y="59.527" font-family="Verdana-Bold" font-size="30" fill="#294270">	[0, 2, -1]])</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 255.194, 555)">
+      <tspan x="-144.806" y="5" font-family="Verdana-Bold" font-size="30" fill="#294270">Out: [False, 1, 1]</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1000, 450)">
+      <tspan x="-90.582" y="20" font-family="Verdana-Bold" font-size="60" fill="#294270">WIN!</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 654.806, 555)">
+      <tspan x="-144.806" y="5" font-family="Verdana-Bold" font-size="30" fill="#294270">Out: [False, 1, 3]</tspan>
+    </text>
+    <g>
+      <path d="M80.5,640.5 L160.5,640.5 L160.5,720.5 L80.5,720.5 z" fill="#8FC7ED"/>
+      <path d="M80.5,640.5 L160.5,640.5 L160.5,720.5 L80.5,720.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M160.5,640.5 L240.5,640.5 L240.5,720.5 L160.5,720.5 z" fill="#8FC7ED"/>
+      <path d="M160.5,640.5 L240.5,640.5 L240.5,720.5 L160.5,720.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M240.5,640.5 L320.5,640.5 L320.5,720.5 L240.5,720.5 z" fill="#C5C6C6"/>
+      <path d="M240.5,640.5 L320.5,640.5 L320.5,720.5 L240.5,720.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M80.5,720.5 L160.5,720.5 L160.5,800.5 L80.5,800.5 z" fill="#8FC7ED"/>
+      <path d="M80.5,720.5 L160.5,720.5 L160.5,800.5 L80.5,800.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M160.5,720.5 L240.5,720.5 L240.5,800.5 L160.5,800.5 z" fill="#8FC7ED"/>
+      <path d="M160.5,720.5 L240.5,720.5 L240.5,800.5 L160.5,800.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M240.5,720.5 L320.5,720.5 L320.5,800.5 L240.5,800.5 z" fill="#C5C6C6"/>
+      <path d="M240.5,720.5 L320.5,720.5 L320.5,800.5 L240.5,800.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M80.5,798.5 L160.5,798.5 L160.5,878.5 L80.5,878.5 z" fill="#8FC7ED"/>
+      <path d="M80.5,798.5 L160.5,798.5 L160.5,878.5 L80.5,878.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M160.5,798.5 L240.5,798.5 L240.5,878.5 L160.5,878.5 z" fill="#8FC7ED"/>
+      <path d="M160.5,798.5 L240.5,798.5 L240.5,878.5 L160.5,878.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M240.5,798.5 L320.5,798.5 L320.5,878.5 L240.5,878.5 z" fill="#C5C6C6"/>
+      <path d="M240.5,798.5 L320.5,798.5 L320.5,878.5 L240.5,878.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 202.164, 680)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">1</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 202.164, 760)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">2</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 200, 838)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">2</tspan>
+    </text>
+    <g>
+      <path d="M480.5,640.5 L560.5,640.5 L560.5,720.5 L480.5,720.5 z" fill="#8FC7ED"/>
+      <path d="M480.5,640.5 L560.5,640.5 L560.5,720.5 L480.5,720.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M560.5,640.5 L640.5,640.5 L640.5,720.5 L560.5,720.5 z" fill="#8FC7ED"/>
+      <path d="M560.5,640.5 L640.5,640.5 L640.5,720.5 L560.5,720.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M480.5,720.5 L560.5,720.5 L560.5,800.5 L480.5,800.5 z" fill="#8FC7ED"/>
+      <path d="M480.5,720.5 L560.5,720.5 L560.5,800.5 L480.5,800.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M560.5,720.5 L640.5,720.5 L640.5,800.5 L560.5,800.5 z" fill="#8FC7ED"/>
+      <path d="M560.5,720.5 L640.5,720.5 L640.5,800.5 L560.5,800.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M640.5,720.5 L720.5,720.5 L720.5,800.5 L640.5,800.5 z" fill="#C5C6C6"/>
+      <path d="M640.5,720.5 L720.5,720.5 L720.5,800.5 L640.5,800.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M480.5,798.5 L560.5,798.5 L560.5,878.5 L480.5,878.5 z" fill="#8FC7ED"/>
+      <path d="M480.5,798.5 L560.5,798.5 L560.5,878.5 L480.5,878.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M560.5,798.5 L640.5,798.5 L640.5,878.5 L560.5,878.5 z" fill="#8FC7ED"/>
+      <path d="M560.5,798.5 L640.5,798.5 L640.5,878.5 L560.5,878.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M640.5,798.5 L720.5,798.5 L720.5,878.5 L640.5,878.5 z" fill="#C5C6C6"/>
+      <path d="M640.5,798.5 L720.5,798.5 L720.5,878.5 L640.5,878.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 602.164, 680)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">1</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 602.164, 760)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">2</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 600, 838)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">2</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 280, 760)">
+      <tspan x="-14.801" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">?</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 280, 838)">
+      <tspan x="-14.801" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">?</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 680, 838)">
+      <tspan x="-18.328" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">X</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 220, 1001.527)">
+      <tspan x="-140" y="-48.473" font-family="Verdana-Bold" font-size="30" fill="#294270">checkio([</tspan>
+      <tspan x="-140" y="-12.473" font-family="Verdana-Bold" font-size="30" fill="#294270">	[0, 1, -1],</tspan>
+      <tspan x="-140" y="23.527" font-family="Verdana-Bold" font-size="30" fill="#294270">	[0, 2, -1],</tspan>
+      <tspan x="-140" y="59.527" font-family="Verdana-Bold" font-size="30" fill="#294270">	[0, 2, -1]])</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 620, 1001.527)">
+      <tspan x="-140" y="-48.473" font-family="Verdana-Bold" font-size="30" fill="#294270">checkio([</tspan>
+      <tspan x="-140" y="-12.473" font-family="Verdana-Bold" font-size="30" fill="#294270">	[0, 1, -1],</tspan>
+      <tspan x="-140" y="23.527" font-family="Verdana-Bold" font-size="30" fill="#294270">	[0, 2, -1],</tspan>
+      <tspan x="-140" y="59.527" font-family="Verdana-Bold" font-size="30" fill="#294270">	[0, 2, 9]])</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 254.806, 1115)">
+      <tspan x="-144.806" y="5" font-family="Verdana-Bold" font-size="30" fill="#294270">Out: [True, 3, 3]</tspan>
+    </text>
+    <g>
+      <path d="M640.5,640.5 L720.5,640.5 L720.5,720.5 L640.5,720.5 z" fill="#C5C6C6"/>
+      <path d="M640.5,640.5 L720.5,640.5 L720.5,720.5 L640.5,720.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 680, 760)">
+      <tspan x="-14.801" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">?</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 654.806, 1105)">
+      <tspan x="-144.806" y="5" font-family="Verdana-Bold" font-size="30" fill="#294270">Out: [True, 3, 2]</tspan>
+    </text>
+    <g>
+      <path d="M880.5,640.5 L960.5,640.5 L960.5,720.5 L880.5,720.5 z" fill="#8FC7ED"/>
+      <path d="M880.5,640.5 L960.5,640.5 L960.5,720.5 L880.5,720.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M960.5,640.5 L1040.5,640.5 L1040.5,720.5 L960.5,720.5 z" fill="#8FC7ED"/>
+      <path d="M960.5,640.5 L1040.5,640.5 L1040.5,720.5 L960.5,720.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M1040.5,640.5 L1120.5,640.5 L1120.5,720.5 L1040.5,720.5 z" fill="#8FC7ED"/>
+      <path d="M1040.5,640.5 L1120.5,640.5 L1120.5,720.5 L1040.5,720.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M880.5,720.5 L960.5,720.5 L960.5,800.5 L880.5,800.5 z" fill="#8FC7ED"/>
+      <path d="M880.5,720.5 L960.5,720.5 L960.5,800.5 L880.5,800.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M960.5,720.5 L1040.5,720.5 L1040.5,800.5 L960.5,800.5 z" fill="#8FC7ED"/>
+      <path d="M960.5,720.5 L1040.5,720.5 L1040.5,800.5 L960.5,800.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M1040.5,720.5 L1120.5,720.5 L1120.5,800.5 L1040.5,800.5 z" fill="#C5C6C6"/>
+      <path d="M1040.5,720.5 L1120.5,720.5 L1120.5,800.5 L1040.5,800.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M880.5,798.5 L960.5,798.5 L960.5,878.5 L880.5,878.5 z" fill="#8FC7ED"/>
+      <path d="M880.5,798.5 L960.5,798.5 L960.5,878.5 L880.5,878.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M960.5,798.5 L1040.5,798.5 L1040.5,878.5 L960.5,878.5 z" fill="#8FC7ED"/>
+      <path d="M960.5,798.5 L1040.5,798.5 L1040.5,878.5 L960.5,878.5 z" fill-opacity="0" stroke="#006CA9" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <g>
+      <path d="M1040.5,798.5 L1120.5,798.5 L1120.5,878.5 L1040.5,878.5 z" fill="#C5C6C6"/>
+      <path d="M1040.5,798.5 L1120.5,798.5 L1120.5,878.5 L1040.5,878.5 z" fill-opacity="0" stroke="#737370" stroke-width="4" stroke-linejoin="bevel"/>
+    </g>
+    <text transform="matrix(1, 0, 0, 1, 1002.164, 680)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">1</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1002.164, 760)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">2</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1080, 680)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">1</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1000, 838)">
+      <tspan x="-17.062" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">2</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1080, 760)">
+      <tspan x="-18.328" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">X</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1080, 838)">
+      <tspan x="-18.328" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">X</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 600, 609.5)">
+      <tspan x="-218.93" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#294270">Another method</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 1000, 1001.527)">
+      <tspan x="-90.582" y="20" font-family="Verdana-Bold" font-size="60" fill="#294270">WIN!</tspan>
+    </text>
+  </g>
+  <defs/>
+</svg>
