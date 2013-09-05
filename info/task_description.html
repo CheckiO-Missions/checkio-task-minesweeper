@@ -83,18 +83,25 @@
 
         <li> - If you uncover an empty square, you can keep playing.</li>
 
+        <li> - If you mark as mine a mined cell, you can keep playing.</li>
+
         <li> - If you uncover a number, it will tell you how many mines lay hidden beneath the eight surrounding
-            squares—use
-            this information to deduce which nearby squares are safe to click on.
+            squares—use this information to deduce which nearby squares are safe to click on.
+        </li>
+
+        <li>
+            - If you mark as mine a cell without mine, the game ends.
         </li>
 
     </ul>
 </div>
 <p>
     On each iteration, the checkio function got a field's map as argument. The map is presented as a list of list.
-    Each cell on the map can be marked as -1 -- not opened cells, 9 -- a mine or a number from 0 to 8 -- a count of the
-    number of mines surrounding the cell).
-    Your checkio function must return a tuple of three values. The first value reflects whether there is a
+    Each cell on the map can be marked as: <strong>-1</strong> -- not opened cells,
+    <strong>9</strong> -- a mine,
+    <strong>a number from 0 to 8</strong> -- a count of the
+    number of mines surrounding the cell.
+    Your checkio function must return a tuple or a list of three values. The first value reflects whether there is a
     landmine on the following coordinates (true or false). The second and third values are the coordinates in the
     passed map (map[i][j]). <strong>Coordinates is counted from 1</strong> (not from zero as in array).
 </p>
@@ -118,8 +125,28 @@
     <p>
         <strong>Example:</strong>
     </p>
-    <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
-    </pre>
+    <pre class="brush: python">checkio([
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+])  # [False, 1, 1]
+checkio([
+    [0, 2, -1, -1, -1, -1, -1, -1, -1, -1],
+    [0, 2, -1, -1, -1, -1, -1, -1, -1, -1],
+    [0, 1, 1, 1, -1, -1, -1, -1, -1, -1],
+    [0, 0, 0, 1, -1, -1, -1, -1, -1, -1],
+    [0, 1, 1, 2, -1, -1, -1, -1, -1, -1],
+    [0, 1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [0, 1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [2, 1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+])  # [True, 1, 3]</pre>
 </div>
