@@ -1,49 +1,95 @@
-"""
-CheckiOReferee is a base referee for checking you code.
-    arguments:
-        tests -- the dict contains tests in the specific structure.
-            You can find an example in tests.py.
-        cover_code -- is a wrapper for the user function and additional operations before give data
-            in the user function. You can use some predefined codes from checkio.referee.cover_codes
-        checker -- is replacement for the default checking of an user function result. If given, then
-            instead simple "==" will be using the checker function which return tuple with result
-            (false or true) and some additional info (some message).
-            You can use some predefined codes from checkio.referee.checkers
-        add_allowed_modules -- additional module which will be allowed for your task.
-        add_close_builtins -- some closed builtin words, as example, if you want, you can close "eval"
-        remove_allowed_modules -- close standard library modules, as example "math"
-
-checkio.referee.checkers
-    checkers.float_comparison -- Checking function fabric for check result with float numbers.
-        Syntax: checkers.float_comparison(digits) -- where "digits" is a quantity of significant
-            digits after coma.
-
-checkio.referee.cover_codes
-    cover_codes.unwrap_args -- Your "input" from test can be given as a list. if you want unwrap this
-        before user function calling, then using this function. For example: if your test's input
-        is [2, 2] and you use this cover_code, then user function will be called as checkio(2, 2)
-    cover_codes.unwrap_kwargs -- the same as unwrap_kwargs, but unwrap dict.
-
-"""
-
 from checkio.signals import ON_CONNECT
 from checkio import api
-from checkio.referees.io import CheckiOReferee
-from checkio.referees import cover_codes
-from checkio.referees import checkers
+from checkio.referees.multicall import CheckiORefereeMulti
 
 from tests import TESTS
 
+
+def initial_referee(mine_map):
+    return {
+        "input": [
+            [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+            [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+            [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+            [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+            [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+            [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+            [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+            [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+            [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+            [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        ],
+        "mine_map": mine_map
+
+    }
+
+
+def process_referee(referee_data, user_result):
+    mine_map = referee_data['mine_map']
+    input_map = referee_data['input']
+    if not isinstance(user_result, (list, tuple)) or len(user_result) != 3:
+        referee_data.update({"result": False, "result_addon": "The function should return a list with three values."})
+        return referee_data
+    is_mine, row, col = user_result
+    if not isinstance(is_mine, bool) or not isinstance(row, int) or not isinstance(col, int):
+        referee_data.update({"result": False, "result_addon": "Result list format is [bool, int, int]"})
+        return referee_data
+    if 10 < row or 1 > row or 10 < col or 1 > col:
+        referee_data.update({"result": False, "result_addon": "You gave wrong coordinates."})
+        return referee_data
+    if input_map[row - 1][col - 1] != -1:
+        referee_data.update({"result": False, "result_addon": "You tried to uncover or mark already opened cell."})
+        return referee_data
+    if is_mine and not mine_map[row - 1][col - 1]:
+        referee_data.update({"result": False, "result_addon": "You marked wrong cell."})
+        return referee_data
+    if not is_mine and mine_map[row - 1][col - 1]:
+        referee_data.update({"result": False, "result_addon": "You uncovered a mine. BANG!"})
+        return referee_data
+    if is_mine:
+        input_map[row - 1][col - 1] = 9
+        referee_data.update({"result": True, "result_addon": "Next move", "input": input_map})
+        return referee_data
+    else:
+        input_map = build_map(input_map, mine_map, row, col)
+        referee_data.update({"result": True, "result_addon": "Next move", "input": input_map})
+        return referee_data
+
+
+def build_map(input_map, mine_map, row, col):
+    opened = [(row, col)]
+    while opened:
+        i, j = opened.pop(0)
+        print(i, j)
+        neighs = [(i + x, j + y) for x, y in [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
+                  if 0 < i + x < 11 and 0 < j + y < 11]
+        value = sum([mine_map[k - 1][l - 1] for k, l in neighs])
+        input_map[i - 1][j - 1] = value
+        if not value:
+            for k, l in neighs:
+                if input_map[k - 1][l - 1] == -1 and (k, l) not in opened:
+                    opened.append((k, l))
+    return input_map
+
+
+def is_win_referee(referee_data):
+    mine_map = referee_data['mine_map']
+    input_map = referee_data['input']
+    mines = sorted([(x, y) for x in range(10) for y in range(10) if mine_map[x][y]])
+    empties = sorted([(x, y) for x in range(10) for y in range(10) if not mine_map[x][y]])
+    marked_mines = sorted([(x, y) for x in range(10) for y in range(10) if input_map[x][y] == 9])
+    uncovered = sorted([(x, y) for x in range(10) for y in range(10) if 0 <= input_map[x][y] < 9])
+    if mines == marked_mines or uncovered == empties:
+        return True
+    return False
+
+
+
 api.add_listener(
     ON_CONNECT,
-    CheckiOReferee(
+    CheckiORefereeMulti(
         tests=TESTS,
-        cover_code={
-            'python-27': cover_codes.unwrap_args,  # or None
-            'python-3': cover_codes.unwrap_args
-        },
-        # checker=None,  # checkers.float.comparison(2)
-        # add_allowed_modules=[],
-        # add_close_builtins=[],
-        # remove_allowed_modules=[]
+        initial_referee=initial_referee,
+        process_referee=process_referee,
+        is_win_referee=is_win_referee,
     ).on_ready)
