@@ -64,7 +64,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
 
             if (!result) {
                 $content.find('.call').html('Fail: checkio(' + ext.JSON.encode(checkioInput) + ')');
-                $content.find('.answer').html('Right result:&nbsp;' + ext.JSON.encode(rightResult));
+                $content.find('.answer').html(result_addon);
                 $content.find('.answer').addClass('error');
                 $content.find('.output').addClass('error');
                 $content.find('.call').addClass('error');
@@ -73,22 +73,17 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 $content.find('.call').html('Pass: checkio(' + ext.JSON.encode(checkioInput) + ')');
                 $content.find('.answer').remove();
             }
-            //Dont change the code before it
 
-            //Your code here about test explanation animation
-            //$content.find(".explanation").html("Something text for example");
-            //
-            //
-            //
-            //
-            //
+            var canvas = new SapperCanvas($content.find(".explanation")[0]);
+            canvas.createCanvas(data.ext["input"]);
+            if (!result) {
+                canvas.showMine(data.ext["mine_map"]);
+            }
 
 
             this_e.setAnimationHeight($content.height() + 60);
 
         });
-
-       
 
         var colorOrange4 = "#F0801A";
         var colorOrange3 = "#FA8F00";
@@ -106,6 +101,81 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
         var colorGrey1 = "#EBEDED";
 
         var colorWhite = "#FFFFFF";
+
+        function SapperCanvas(dom) {
+            var x0 = 10,
+                y0 = 10,
+                cellSize = 30,
+                cellN = 10;
+
+            var uncoveredCell = {"stroke": colorGrey4, "fill": colorGrey1, "stroke-width": 2};
+            var mineCell = {"stroke": colorGrey4, "fill": colorOrange1, "stroke-width": 2};
+            var openedCell = {"stroke": colorGrey4, "fill": colorBlue1, "stroke-width": 2};
+            var attrNumb = {"stroke": colorBlue4, "font-size": cellSize * 0.6, "font-family": "verdana"};
+            var attrSign = {"stroke": colorBlue3, "font-size": cellSize * 0.5, "font-family": "verdana"};
+            var attrMine = {"stroke": colorOrange4, "fill": colorOrange4, "font-size": cellSize * 0.6, "font-family": "verdana"};
+
+
+            var fullSize = 4 * x0 + cellN * cellSize;
+
+            var paper = Raphael(dom, fullSize, fullSize, 0, 0);
+            var fieldSet = paper.set();
+
+            this.createCanvas = function (inputMap) {
+                for (var row = 0; row < cellN; row++) {
+                    paper.text(3 * x0 + row * cellSize + cellSize / 2,
+                        fullSize - 4 * y0 - cellN * cellSize + cellSize / 2,
+                        String(row + 1)
+                    ).attr(attrSign);
+                    paper.text(cellSize / 2,
+                        fullSize - y0 - (cellN - row) * cellSize + cellSize / 2,
+                        String(row + 1)
+                    ).attr(attrSign);
+                    var rowSet = paper.set();
+                    for (var col = 0; col < cellN; col++) {
+                        var r = paper.rect(
+                            3 * x0 + col * cellSize,
+                            fullSize - y0 - (cellN - row) * cellSize,
+                            cellSize,
+                            cellSize
+                        );
+                        if (inputMap[row][col] === -1) {
+                            r.attr(uncoveredCell);
+                        }
+                        else if (inputMap[row][col] === 9) {
+                            r.attr(uncoveredCell);
+                            paper.text(3 * x0 + col * cellSize + cellSize / 2,
+                                fullSize - y0 - (cellN - row) * cellSize + cellSize / 2,
+                                "X"
+                            ).attr(attrMine);
+                        }
+                        else {
+                            r.attr(openedCell);
+                            if (inputMap[row][col] !== 0) {
+                                paper.text(3 * x0 + col * cellSize + cellSize / 2,
+                                    fullSize - y0 - (cellN - row) * cellSize + cellSize / 2,
+                                    inputMap[row][col]
+                                ).attr(attrNumb);
+                            }
+                        }
+                        rowSet.push(r);
+                    }
+                    fieldSet.push(rowSet);
+                }
+            };
+
+            this.showMine = function (mineMap) {
+                for (var row = 0; row < cellN; row++) {
+                    for (var col = 0; col < cellN; col++) {
+                        if (mineMap[row][col]) {
+                            fieldSet[row][col].attr(mineCell);
+                        }
+                    }
+                }
+            }
+        }
+
+
         //Your Additional functions or objects inside scope
         //
         //

@@ -60,7 +60,6 @@ def build_map(input_map, mine_map, row, col):
     opened = [(row, col)]
     while opened:
         i, j = opened.pop(0)
-        print(i, j)
         neighs = [(i + x, j + y) for x, y in [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
                   if 0 < i + x < 11 and 0 < j + y < 11]
         value = sum([mine_map[k - 1][l - 1] for k, l in neighs])
