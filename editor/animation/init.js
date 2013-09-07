@@ -55,6 +55,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             var userResult = data.out;
             var result = data.ext["result"];
             var result_addon = data.ext["result_addon"];
+            var isWin = data.ext["is_win"];
 
 
             //if you need additional info from tests (if exists)
@@ -76,7 +77,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
 
             var canvas = new SapperCanvas($content.find(".explanation")[0]);
             canvas.createCanvas(data.ext["input"]);
-            if (!result) {
+            if (!result || isWin) {
                 canvas.showMine(data.ext["mine_map"]);
             }
 
