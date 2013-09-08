@@ -34,20 +34,20 @@ def process_referee(referee_data, user_result):
     if not isinstance(is_mine, bool) or not isinstance(row, int) or not isinstance(col, int):
         referee_data.update({"result": False, "result_addon": "Result list format is [bool, int, int]"})
         return referee_data
-    if 10 < row or 1 > row or 10 < col or 1 > col:
+    if 10 <= row or 0 > row or 10 <= col or 0 > col:
         referee_data.update({"result": False, "result_addon": "You gave wrong coordinates."})
         return referee_data
-    if input_map[row - 1][col - 1] != -1:
+    if input_map[row][col] != -1:
         referee_data.update({"result": False, "result_addon": "You tried to uncover or mark already opened cell."})
         return referee_data
-    if is_mine and not mine_map[row - 1][col - 1]:
+    if is_mine and not mine_map[row][col]:
         referee_data.update({"result": False, "result_addon": "You marked wrong cell."})
         return referee_data
-    if not is_mine and mine_map[row - 1][col - 1]:
+    if not is_mine and mine_map[row][col]:
         referee_data.update({"result": False, "result_addon": "You uncovered a mine. BANG!"})
         return referee_data
     if is_mine:
-        input_map[row - 1][col - 1] = 9
+        input_map[row][col] = 9
         referee_data.update({"result": True, "result_addon": "Next move", "input": input_map})
         return referee_data
     else:
@@ -61,12 +61,12 @@ def build_map(input_map, mine_map, row, col):
     while opened:
         i, j = opened.pop(0)
         neighs = [(i + x, j + y) for x, y in [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
-                  if 0 < i + x < 11 and 0 < j + y < 11]
-        value = sum([mine_map[k - 1][l - 1] for k, l in neighs])
-        input_map[i - 1][j - 1] = value
+                  if 0 <= i + x < 10 and 0 <= j + y < 10]
+        value = sum([mine_map[k][l] for k, l in neighs])
+        input_map[i][j] = value
         if not value:
             for k, l in neighs:
-                if input_map[k - 1][l - 1] == -1 and (k, l) not in opened:
+                if input_map[k][l] == -1 and (k, l) not in opened:
                     opened.append((k, l))
     return input_map
 

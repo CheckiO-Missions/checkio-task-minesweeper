@@ -126,11 +126,11 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 for (var row = 0; row < cellN; row++) {
                     paper.text(3 * x0 + row * cellSize + cellSize / 2,
                         fullSize - 4 * y0 - cellN * cellSize + cellSize / 2,
-                        String(row + 1)
+                        String(row)
                     ).attr(attrSign);
                     paper.text(cellSize / 2,
                         fullSize - y0 - (cellN - row) * cellSize + cellSize / 2,
-                        String(row + 1)
+                        String(row)
                     ).attr(attrSign);
                     var rowSet = paper.set();
                     for (var col = 0; col < cellN; col++) {
