@@ -35,13 +35,13 @@ def process_referee(referee_data, user_result):
         referee_data.update({"result": False, "result_addon": "Result list format is [bool, int, int]"})
         return referee_data
     if 10 <= row or 0 > row or 10 <= col or 0 > col:
-        referee_data.update({"result": False, "result_addon": "You gave wrong coordinates."})
+        referee_data.update({"result": False, "result_addon": "You gave the wrong coordinates."})
         return referee_data
     if input_map[row][col] != -1:
         referee_data.update({"result": False, "result_addon": "You tried to uncover or mark already opened cell."})
         return referee_data
     if is_mine and not mine_map[row][col]:
-        referee_data.update({"result": False, "result_addon": "You marked wrong cell."})
+        referee_data.update({"result": False, "result_addon": "You marked the wrong cell."})
         return referee_data
     if not is_mine and mine_map[row][col]:
         referee_data.update({"result": False, "result_addon": "You uncovered a mine. BANG!"})
