@@ -62,7 +62,7 @@
 </div>
 
 
-<p><strong>Description: <br></strong>
+<p>
     Minesweeper is a popular classic computer game. 
     The object of the game is to clear an abstract minefield without detonating a mine.
     The player is initially presented with a grid of undifferentiated squares. 
@@ -77,7 +77,7 @@
 </p>
 
 <div>
-    <strong>The rules:</strong>
+    Let's learn the rules:
 
 
     <ul>
@@ -110,7 +110,7 @@
     number of mines surrounding the cell.
     Your checkio function must return a tuple or a list of three values. The first value reflects whether there is a
     landmine on the following coordinates (true or false). The second and third values are the coordinates in the
-    passed map (map[i][j]). For starting the game you can use [0, 0] cell -- it is empty always.
+    passed field map (field[i][j]). For starting the game you can use [0, 0] cell -- it is empty always.
 </p>
 
 <p style="text-align: center;">
@@ -119,12 +119,11 @@
 </p>
 
 <p>
-    <strong>Input: </strong> A field's map. A list of lists.
+    <strong>Input: </strong> A field map. A list of lists.
 </p>
 
 <p>
-    <strong>Output: </strong> A tuple or a list with next values: is it a mine (True or False), row and column
-    (integers).
+    <strong>Output: </strong> A tuple or a list with next values: is it a mine as boolean, row and column as integers.
 </p>
 
 
@@ -157,3 +156,17 @@ checkio([
     [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
 ])  # [True, 0, 2]</pre>
 </div>
+
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    Of course the goal of this task is that now you can write a bot for the main Windows game and save your colleagues from Procrastination.
+    But it can help also with the serious problems. This concept is using for the prediction and decision systems.
+
+</p>
+
+<p>
+    <strong>Precondition:</strong> |field| = 10<br>
+    The top left cell is empty.<br>
+    The puzzle is solvable without random guessing.
+</p>
