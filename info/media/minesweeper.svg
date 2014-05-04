@@ -317,8 +317,8 @@
     <text transform="matrix(1, 0, 0, 1, 680.5, 760)">
       <tspan x="-15.301" y="18.5" font-family="Verdana-Bold" font-size="48" fill="#F0801A">?</tspan>
     </text>
-    <text transform="matrix(1, 0, 0, 1, 648.986, 1098.5)">
-      <tspan x="-138.986" y="11.5" font-family="Verdana-Bold" font-size="30" fill="#294270">Out: [True, 3, 2]</tspan>
+    <text transform="matrix(1, 0, 0, 1, 648.986, 1108.5)">
+      <tspan x="-138.986" y="11.5" font-family="Verdana-Bold" font-size="30" fill="#294270">Out: [True, 1, 2]</tspan>
     </text>
     <g>
       <path d="M880.5,640.5 L960.5,640.5 L960.5,720.5 L880.5,720.5 z" fill="#8FC7ED"/>
