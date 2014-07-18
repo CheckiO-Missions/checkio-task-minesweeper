@@ -166,8 +166,9 @@ checkio([
 </p>
 
 <p>
-    <strong>Precondition:</strong> |field| = 10x10<br>
-    The grid is a square.<br>
-    The top left cell is empty.<br>
+    <strong>Precondition:</strong><br>
+    len(field) == 10<br>
+    all(len(row) == 10 for rown in field)<br>
+    field[0][0] == 0<br>
     The puzzle is solvable without random guessing.
 </p>
