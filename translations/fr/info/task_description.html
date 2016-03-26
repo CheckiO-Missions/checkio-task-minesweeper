@@ -1,0 +1,174 @@
+<div class="story"
+     style="background: url(/media/files/tasks/robots/sapper_v2_400.png) no-repeat -10px -12px; margin-left: -21px; padding-left: 21px">
+    <div style="float:left; width: 333px; height: 349px;"></div>
+
+    <p>"Nikola, quel est le problème avec Stephen ?" cria Sofia lorsqu'elle vit Nikola jeter ses outils dans les jambes de Stephen. 
+    </p>
+
+    <p> "Il a marché sur une mine." </p>
+
+    <p> "Quoi!?" </p>
+
+    <p> "Ne t'inquiète pas !
+    Les robots de sa classe sont très solides, pas comme nous ; il est sorti presque indemne de l'explosion.
+    Une fois que j'aurai tout vérifié deux fois, je l'enverrai au nettoyage." </p>
+
+    <p> "Mais comment a-t-il pu marcher sur une mine?" </p>
+
+    <p> "Oui, c'est ça qui doit nous inquiéter.
+        Il y a un champ de mines à deux heures de marche d'ci.
+        On dirait que quelqu'un protège quelquechose, ou se protège de quelqu'un.
+        De toute façon, il est très difficile de traverser ce champ de mines. </p>
+
+    <p> "Stephen est-il revenu à lui? Nous entend-il?" </p>
+
+    <p> "Non, mais je sais ce que tu veux savoir, et la réponse est NON!
+        On ne va pas laisser Stephen dégager un chemin à travers le champ de mines pour nous.
+        Même son châssis anti-feu ne pourra pas supporter les explosions aussi longtemps.
+        Sans compter que c'est très desagréable à faire !" </p>
+
+    <p> "Comment peux-tu seulement imaginer que j'allais lui demander ça ?" dit Sofia en boudant.</p>
+
+    <p> "Alors quelle était donc ta question?" </p>
+
+    <p> "Peu importe… alors, que prosposes-tu? Quelles sont les options?" </p>
+
+    <p> "C'est toi qu'on va envoyer là-bas," répondit Nikola. </p>
+
+    <p> "QUoi?! Mon chassis n'est pas aussi solide que celui de Stephen! Non. Non et  Non.
+    J'ai beau être superbe et très coûteuse, cela ne veut pas dire que je suis solide et efficace."</p>
+
+    <p> "Il y a un champ magnétique, donc chaque mine est reliée à un cadre métallique." </p>
+
+    <p> "Oh, alors ce ne serait pas plus mal que ce soit moi qui y aille ?" </p>
+
+    <p> "Exactement. Tu n'as presque aucune pièce métallique -- tu pourras facilement te déplacer là-bas." </p>
+
+    <p> "Même si tes connaissances ne m'ont jamais déçue, je voudrais ajouter cette épreuve au test," dit Sofia
+        en cherchant quelquechose dans la base de données du vaisseau.
+        Attends une minute! Je ne peux pas y aller sans toi et, du même coup, te laisser seul ici..." </p>
+
+    <p> "Tu as raison -- Tu ne veux pas y aller seule. C'est pourquoi je vais te donner un dispositif qui va non seulement
+    te montrer où sont les mines, mais qui va t'indiquer la force du champ magnétique qui les entoure.
+    Cela va nous aider à connaître le nombre de mines qui entourent une case, et, partant de cette information,
+    de déterminer la position des mines."</p>
+
+    <p> "D'accord. Donne-moi ce dispositif, que je puisse parcourir le champ et en établir une carte. " </p>
+
+    <p> "Pas si vite -- ce n'est pas si simple. Si tu marches sur une mine, cela coûtera très cher.
+    Il faut écrire un module qui calcule la position des mines pendant ton parcours, afin que tu ne marches pas accidentellement
+    sur une mine." </p>
+    <p> "Il faut écrire ce module avec précaution, n'est-ce pas? Je veux pouvoir te regarder dans les yeux, monsieur le malin,
+    bien en sécurité, depuis l'autre côté du champ." </p>
+
+</div>
+
+
+<p>
+    Le jeu de démineur est un jeu d'ordinateur classique. 
+    Le but du jeu est de libérer un champ de mines abstrait, sans faire sauter de mine. 
+    On présente initialement au joueur une grille de cases d'apparences identiques.
+    Certaines de ces cases contiennent aléatoirement des mines, à des positions inconnues du joueur. 
+    La grille est habituellement de taille 10 x 10.
+    Le jeu se déroule en découvrant certaines cases de la grille.
+    Si la case désignée contient une mine, elle explose et le joueur a perdu.
+    Si une case saine est désignée, un nombre apparaît dans cette case.
+    Il s'agit du nombre de cases adjacentes (moins de 8) qui contiennent une mine.
+    Si ce nombre est 0, la case devient blanche et les cases avoisinantes sont automatiquement révélées.
+    Il vous faut démasquer toutes les cases qui contiennent des mines, et désigner toutes les autres.
+</p>
+
+<div>
+    Précisons les règles:
+    <ul>
+        <li> - Si vous désignez une mine, la partie est finie.</li>
+
+        <li> - Si vous désignez une case vide, la partie continue.</li>
+
+        <li> - Si vous marquez comme mine une case qui contient une mine, la partie continue.</li>
+
+        <li> - Si vous découvrez un numéro, il précise le nombre de mines cachées dans les cases voisines de cette case.
+        Utiliser cette information pour déduire la position des mines et des cases saines de proche en proche.
+
+        <li>
+            - Si vous marquez comme mine une case saine, la partie est finie.
+        </li>
+
+        <li>
+            - Si vous désignez une case déjà découverte, la partie est finie (nous n'aimons pas les jeux éternels.).
+        </li>
+    </ul>
+</div>
+<p>
+    A chaque itération, la fonction checkio prend en argument la carte du champ.
+    La carte est représentée par une liste de listes.
+    Chaque case de la carte peut être marquée par :
+ <strong>-1</strong> -- case non ouverte,
+    <strong>9</strong> -- une mine,
+    <strong>a number from 0 to 8</strong> -- nombre de mines qui entourent la case.
+    Votre fonction checkio doit retourner un tuple ou une liste de trois valeurs.
+    La première valeur dit s'il y a une mine sur la case dont les coordonnées sont données ensuite (False ou True) ;
+    Les deuxième et troisième valeurs sont les coordonnées (i,j) dans la carte passée de field (field[i][j]).
+    En début de partie, vous pouvez utiliser la case [0, 0] -- elle est toujours vide.
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only" title="minesweeper" src="{{MEDIA}}minesweeper.png" alt="minesweeper" width="600px"/>
+    <img class="for_editor_only" title="minesweeper" src="{{MEDIA}}minesweeper.png" alt="minesweeper" width="380px"/>
+</p>
+
+<p>
+    <strong>Input: </strong>Une carte du champ de mines, comme liste de listes d'entiers.
+</p>
+
+<p>
+    <strong>Output: </strong> Un tuple ou une liste avec les valeurs suivantes : est-ce une mine, comme booléen,
+    ligne et colonne de la case, comme entiers.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple:</strong>
+    </p>
+    <pre class="brush: python">checkio([
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+])  # [False, 0, 0]
+checkio([
+    [0, 2, -1, -1, -1, -1, -1, -1, -1, -1],
+    [0, 2, -1, -1, -1, -1, -1, -1, -1, -1],
+    [0, 1, 1, 1, -1, -1, -1, -1, -1, -1],
+    [0, 0, 0, 1, -1, -1, -1, -1, -1, -1],
+    [0, 1, 1, 2, -1, -1, -1, -1, -1, -1],
+    [0, 1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [0, 1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [2, 1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+    [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+])  # [True, 0, 2]</pre>
+</div>
+
+
+<p class="for_info_only">
+    <strong>Application: </strong>
+    Bien sûr, le but de cette mission est de vous montrer que vous avez les compétences pour programmer
+    vous-même le jeu original de Windows.
+    Ces concepts sont appliqués dans des problèmes de prédiction, ou de systèmes décisionnels.
+</p>
+
+<p>
+    <strong>Préconditions:</strong><br>
+    len(field) == 10<br>
+    all(len(row) == 10 for rown in field)<br>
+    field[0][0] == 0<br>
+    L'énigme peut être résolue dans faire appel au hasard.
+</p>
